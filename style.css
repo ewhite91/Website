@@ -1,0 +1,44 @@
+
+body {background-color: rgb(223, 242, 235);
+    color: #00364A;
+    }
+
+
+h1 {text-align: center;
+    font-family: Libre Baskerville;
+    text-transform: uppercase;
+    }
+
+h2 {text-align: center;
+    font-family: Libre Baskerville;
+    text-transform: uppercase;
+    font-size: 20pt;
+    margin-top: 20px;
+    }
+
+    .button_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+
+    }
+
+    .button_columns{
+        flex: 1;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    @media (max-width: 768px) {
+        .button_container { 
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-right: 0;
+            
+        }
+        .button_columns {
+            width: 100%;
+        }
+    }

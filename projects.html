@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        p {text-align: center;
+        font-size: 12pt;
+        padding-top: 20pt;
+        padding-left: 100pt;
+        padding-right: 100pt;
+        }
+
+
+        button {
+            font-family: Libre Baskerville;
+            margin-bottom: 10px;
+        }
+
+        .button:hover {
+            transition-duration: 0.4s;
+            background-color: #4A628A;
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+            transform: scale(1.05);
+        }
+
+        a {
+            text-align: right;
+            font-size: 12pt;
+            font-family: Libre Baskerville;
+            text-decoration: none;
+            color: #00364A;
+            margin-bottom: 18pt;
+            }
+
+        a:hover{
+            transition-duration: .4s;
+            color: #B9E5E8;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+        }
+
+        img:hover{
+            transform: scale(2);
+            transition-duration: 0.4s;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            padding: 20px;
+            gap: 10px;
+        }
+
+        .rows{
+            flex: 1;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #B9E5E8;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+            border-radius: 6px;
+        }
+        @media (max-width: 768px) {
+            .container { 
+                display: grid;
+                grid-template-columns: 1fr;
+                padding-right: 20px;
+                
+            }
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    <div class="button_container">
+        <div class="button_columns">
+            <button class ="button"><a href="./index.html">Homepage</a></button>
+        </div>
+
+        <div class="button_columns">
+            <button class ="button"><a href="./aboutMefinal.html">About ME</a></button>
+        </div>
+
+        <div class="button_columns">
+            <button class ="button"><a href="./contactFinal.html">Contact Me</a></button>
+        </div>
+    </div>
+    <h1>Current Projects</h1>
+    <p>I am currently working on a couple of projects in python. One is a connect 4 game
+        and the other is a program for automatically moving files from one directory (folder)
+        to another.
+    </p>
+    <p>Currently as I have been busy, 
+        neither one is complete but the copre concepts are working in them.</p>
+
+        <Div class="container">
+            <div class="rows">
+                <h2>Connect 4 Game Code</h2>
+                <img src="./connect4_1.png" alt="Connect 4 Project">
+                <img src="./connect4_2.png" alt="Connect 4 Project">
+                <img src="./connect4_3.png" alt="Connect 4 Project">
+                <p>The code can be refined a bit and probably be made even more efficient 
+                    as I get ready to complete this. For now I have got it to make the board working.
+                    The last main thing I can do to make it funtional is to make it so that the game has
+                    a algorthm or something to check after each move to see if it is 4 in a row. I have an idea 
+                    of how I want to do this already. I juest want to make it flexible as I may give the option for 
+                    the user to make it a connect 5 game.
+                </p>
+            </div>
+
+            <div class="rows">
+                <h2>File Moving Project</h2>
+                <img src="./file_mover.png" alt="File Moving Project">
+                <p>I have ran this and have got it to take files out of a test
+                    folder and then move them to another test folder. I have it so I can specify certain 
+                    strings to to search for in each file now and then make a folder for it and move it to that 
+                    folder that corresponds to it's name. Such as "home work 4 math 101" will be moved to the math 101
+                    folder. From here I plan to advance this so that it can a files meta data and decide where to send it as for 
+                    Canvas each class has its own ID. Once I get that it can find the ID in the downloaded area of the metadata
+                    and move it to the corresponding folder.
+                </p>
+                <p>If I have time I want to also make it so that when you download a file from a website or page it 
+                    can know to make a folder if one does not exist already and then place it in that folder in documents.
+                    Specifically for pages like Canvas and using webscarping to recognize the course and number to do so.
+                </p>
+            </div>
+
+        </Div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {background-color: #f0f5fb;}
+
+        .heading-size {
+            font-size: 20px;
+        }
+
+        .list-display {
+            list-style-type: none;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+
+        .button {
+            background-color: #ceddf2;
+            border: none;
+            border-radius: 6px;
+            box-shadow:none;
+
+        }
+        .button:hover {
+            transition-duration: 0.4s;
+            color: white;
+            background-color: #0056b3;
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+            transform: scale(1.05);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            padding: 20px;
+            gap: 10px;
+        }
+
+        .column {
+            flex: 1;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f2e3ce;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+            border-radius: 6px;
+            
+            
+        }
+        @media (max-width: 768px) {
+            .container { 
+                display: grid;
+                grid-template-columns: 1fr;
+                padding-right: 70px;
+                
+            }
+            .column {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class = "container">
+        <div class = "column"> 
+            <h1 = class="heading-size">Basic</h1> 
+            <p>Basic features for starters and basic users.</p>
+            <ul class = "list-display">
+                <li>10 projects</li>
+                <li>Most common tools</li>
+                <li>20 templates</li>
+            </ul>
+            <button class ="button">Choose Basic</button>
+    
+        </div>
+
+        <div class = "column"> 
+            <h1 = class="heading-size">Plus</h1>
+            <p>More features for more advanced users.</p> 
+            <ul class = "list-display">
+                <li>20 projects</li>
+                <li>More advanced tools + common tools</li>
+                <li>50 templates</li>
+            </ul>
+            <button class ="button">Choose Plus</button>
+        </div>
+
+        <div class = "column"> 
+            <h1 = class="heading-size">Premium</h1>
+            <p>All of the features for the most advanced users and best experience.</p> 
+            <ul class = "list-display">
+                <li>Unlimited projects</li>
+                <li>More advanced tools + common tools</li>
+                <li>100+ templates</li>
+                <li>Techincal support</li>
+            </ul>
+            <button class ="button">Choose Premium</button>
+        </div>   
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css"/>
+
+    <style>
+        .two_container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            padding: 20px;
+            gap: 10px;
+        }
+
+        .sigle_container{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            padding: 20px;
+            gap: 10px;
+        }
+
+
+        .single_row {
+            flex: 1;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+            margin-left: 300px;
+            margin-right: 300px;
+            background-color:#B9E5E8;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+            border-radius: 6px;
+        }
+
+        .single_row:hover {
+            transition-duration: 0.6s;
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+            transform: scale(1.15);
+            background-color: #7AB2D3;
+        }
+
+
+        .column {
+            flex: 1;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #B9E5E8;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+            border-radius: 6px;
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+        }
+
+        .splittext{
+            flex: 1;
+        }
+
+
+        .column:hover {
+            transition-duration: 0.6s;
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+            transform: scale(1.15);
+            background-color: #7AB2D3;   
+        }
+
+        h2 {
+            font-family: Libre Baskerville;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            font-family: Libre Baskerville;
+            margin-bottom: 10px;
+            justify-content: center;
+        }
+
+        .button:hover {
+            transition-duration: 0.4s;
+
+            background-color: #4A628A;
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+            transform: scale(1.05);
+        }
+
+        h4{
+            font-family: Libre Baskerville;
+            text-align: center;
+            margin-top: 60pt;
+        }
+
+        li{
+            font-family: Libre Baskerville;
+            font-size: 10pt;
+            text-align: left;
+            list-style-type: none;
+        }
+
+        a {
+            text-align: right;
+            font-size: 8pt;
+            font-family: Libre Baskerville;
+            text-decoration: none;
+            color: #00364A;
+            margin-bottom: 18pt;
+            }
+
+        a:hover{
+            transition-duration: .4s;
+            color: #B9E5E8;
+        }
+
+        @media (max-width: 768px) {
+            .two_container { 
+                display: grid;
+                grid-template-columns: 1fr;
+                padding-right: 70px;
+                
+            }
+            .column {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .single_container { 
+                display: grid;
+                grid-template-columns: 1fr;
+                padding-right: 70px;
+                
+            }
+            .single_row {
+                width: 100%;
+                padding: 25pt;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+
+<script>
+    function changeMyColor() {
+        document.body.style.backgroundColor = "#F4BE75";
+        return console.log('Button was clicked! \n You cannot change it back now.')
+    }
+</script>
+</head>
+<body>
+    <h1 id="test">My Homepage</h1>
+
+    <div class="single_container">
+        <div class = "single_row"> 
+            <h2>Projects</h2>
+                <p>A place for looking at some projects I have either finished or am working on.</p>
+                <button class ="button"><a href="./projects.html">Click to go to see the projects.</a></button>
+
+            </div>
+    </div>
+    
+    <div class = "two_container">
+        <div class = "column"> 
+            <h2>About Me</h2>
+                <p>A page to tell you a bit more about me.</p>
+                <button class ="button"><a href="./aboutMefinal.html">Click to go to about me page.</a></button>
+        </div>
+
+        <div class = "column"> 
+                <h2> Contact Me </h2> 
+                <p>How to contact me.</p>
+                <button class ="button"><a href="./contactFinal.html">click here to see more.</a></button>
+        </div> 
+    </div>
+    <h4>Below are also some projects here that are all based arounnd HTML and CSS.</h4>
+
+    <div class="two_container">
+
+        <div class="column" >
+            <h2>HTML Projects</h2>
+            <ul>
+                <div class="split">
+                    <div class="splittext"><li>A simple web page over favorite three movies.</li></div>
+                    <div class="splittext"><button class ="button"><a href="./HW1.html">My Three favorite Movies</a></button></div>
+                    <div class="splittext"><li>A page for a birthday party.</li></div>
+                    <div class="splittext"><button class ="button"><a href="./HW2.html">Birthday Invintation</a></button></div>
+                    <div class="splittext"><li>A website for an online resume with links.</li></div>
+                    <div class="splittext"><button class ="button"><a href="./resumeProject/index.html">Resume</a></button></div>
+                </div>
+            </ul>
+        </div>
+
+        <div class="column" >
+            <h2>CSS Projects</h2>
+            <ul>
+                <div class="split">
+                    <div class="splittext"><li>My blog page.</li></div>
+                    <div class="splittext"><button class ="button"><a href="./blog.html">My Blog</a></button></div>
+                    <div class="splittext"><li>Features comparison table.</li></div>
+                    <div class="splittext"><button class ="button"><a href="./HW5.html">Comparison Tables</a></button></div>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+
+    <div style="text-align: center;">
+        <p>Click the button to make this page feel a bit warmer and have more contrast.</p>
+        <button onclick="changeMyColor()" class = "button_columns">Change the background</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css"/>
+
+    <style>
+        button {
+            font-family: Libre Baskerville;
+            margin-bottom: 10px;
+        }
+
+        .button:hover {
+            transition-duration: 0.4s;
+            background-color: #4A628A;
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+            transform: scale(1.05);
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            padding: 20px;
+            gap: 10px;
+        }
+
+        .item{
+            flex: 1;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            margin: 5pt;
+            background-color: #B9E5E8;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+            border-radius: 6px;
+        }
+
+        .item:hover {
+            transition-duration: 0.5s;
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+            transform: scale(1.08);
+            background-color: #7AB2D3;
+        }
+
+        h2 {
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 14pt;
+            text-align: center;
+        }
+
+        a {text-align: center;
+            font-family: Libre Baskerville;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #00364A;
+            }
+            a:hover{
+                transition-duration: .4s;
+                color: #B9E5E8;
+            }
+
+
+            @media (max-width: 768px) {
+                .container { 
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    padding-right: 20px;
+                    
+                }
+            }
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="button_container">
+        <div class="button_columns">
+            <button class ="button"><a href="./index.html">Homepage</a></button>
+        </div>
+
+        <div class="button_columns">
+            <button class ="button"><a href="./projects.html">Projects</a></button>
+        </div>
+
+        <div class="button_columns">
+            <button class ="button"><a href="./aboutMefinal.html">About Me</a></button>
+        </div>
+    </div>
+
+    <h1>Contact Me</h1>
+
+    <h3>Here are some ways to contact me or to see my work and experience.</h3>
+
+    <div class="container">
+
+        <div class="item">
+            <h2>Phone</h2>
+            <h3>123-456-7890</h3>
+        </div>
+
+        <div class="item">
+            <h2>e-mail</h2>
+            <h3>an_e-mail@domain.edu</h3>
+        </div>
+
+        <div class="item">
+            <h2>Linkedin</h2>
+            <h3>
+                <a href="https://www.linkedin.com/in/evan-white-n/" >https://www.linkedin.com/in/evan-white-n/</a>
+            </h3>
+        </div>
+
+        <div class="item">
+            <h2>GitHub</h2>
+            <h3>
+                <a href="https://github.com/ewhite91/html-portfolio" >https://github.com/ewhite91/html-portfolio</a>
+            </h3>
+        </div>
+    </div>
+    
+</body>
+</html>
